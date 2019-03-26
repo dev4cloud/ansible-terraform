@@ -1,4 +1,6 @@
 ---
+- name: Work around apt issue
+  shell: apt-get update
 - name: Install java
   apt:
     name=openjdk-8-jre-headless
