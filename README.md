@@ -2,4 +2,7 @@ Ensure that you have setup your environment with terraform and adjust the path t
 `inventory/terraform_inv.ini`
 
 Run the deployment
-`ansible-playbook -vvvv -i inventory site.yml`
+`ansible-playbook -i inventory site.yml`
+
+Run performance tests against your setup. Use the URL of your loadbalancer!
+`ab -n 100 http://myloadbalancer-1645457-fra02.lb.bluemix.net/`
